@@ -1,0 +1,183 @@
+<div id="expedition_prepare">
+	<table class="wog-table1">
+		<tbody>
+			<tr>
+				<td class="head_td" width="33%" colspan="2">探險地點</td>
+				<td class="head_td" width="33%">推遲時間</td>
+				<td class="head_td" width="34%">探險基金</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<select id="expedition_place">
+						<optgroup label="中央大陸">
+							<option value="1">中央平原</option>
+							<option value="3">黑暗沼澤</option>
+							<option value="7">王者之路</option>
+							<option value="13">水晶之間</option>
+						</optgroup>
+						<optgroup label="魔法王國">
+							<option value="2">試鍊洞窟</option>
+							<option value="8">幻獸森林</option>
+							<option value="12">天空之城</option>
+							<option value="15">最果之島</option>
+						</optgroup>
+						<optgroup label="熱帶雨林">
+							<option value="4">迷霧森林</option>
+							<option value="11">無淵洞窟</option>
+							<option value="16">冷峰寒地</option>
+							<option value="9">星河異界</option>
+						</optgroup>
+						<optgroup label="末日王城">
+							<option value="10">灼熱荒漠</option>
+							<option value="5">古代遺跡</option>
+							<option value="6">久遠戰場</option>
+							<option value="14">失落古船</option>
+							<option value="21">血之魔域</option>
+						</optgroup>
+						<optgroup label="禁區挑戰">
+							<option value="17">廢棄洞窟</option>
+							<option value="18">日沒碉堡</option>
+							<option value="19">靜止之城</option>
+							<option value="20">黑曜神廟</option>
+						</optgroup>
+					</select>
+				</td>
+				<td>
+					<input type="number" id="expedition_delay_timeline" min="0" max="60" value="0" style="width: 4em;text-align:right"/> 分鐘
+				</td>
+				<td>
+					$<span id="expedition_money">0</span><br/>
+					<input id="donation" type="number" min="0" value="0" step="1000"/> <button id="donate">捐獻</button>
+				</td>
+			</tr>
+			<tr>
+				<td>探索時間</td>
+				<td>
+					<select id="expedition_return_timeline">
+						<option value="1">大略探索</option>
+						<option value="2">短期探索</option>
+						<option value="3">深入探索</option>
+						<option value="4">長期探索</option>
+						<option value="5">遠征隊伍</option>
+					</select>
+				</td>
+				<td rowspan="2" colspan="2">
+					<button id="start">準備出發</button>
+				</td>
+			</tr>
+			<tr>
+				<td>探索方針</td>
+				<td>
+					<select id="expedition_type">
+						<option value="1">探險隊</option>
+						<option value="2">討伐隊</option>
+						<option value="3">開採隊</option>
+						<option value="4">研究隊</option>
+					</select>
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr><td colspan="4">※探險隊出發後將無法從事冒險、住宿等動作</td></tr><tr>
+			<tr><td colspan="4"><a class="uline back">【返回】</a></td></tr>
+		</tfoot>
+	</table>
+</div>
+<div id="expedition_delay">
+	<table class="wog-table1">
+		<tbody>
+			<tr>
+				<td class="head_td" colspan="3">探險隊準備中</td>
+			</tr>
+			<tr>
+				<td class="head_td" width="33%">探索方針</td>
+				<td class="head_td" width="33%">探險基金</td>
+				<td class="head_td" width="34%">出發時間</td>
+			</tr>
+			<tr>
+				<td>
+					前往<span id="place">未知區域</span><span id="type">探險</span>
+				</td>
+				<td>
+					$<span id="expedition_money">0</span><br/>
+					<input id="donation" type="number" min="0" step="1000" value="0"/> <button id="donate">捐獻</button>
+				</td>
+				<td>
+					<span id="start_time">未知</span><br/>
+					<button id="pause">終止探險</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><a class="uline back">【返回】</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div id="expedition_exploring">
+	<table class="wog-table1">
+		<tbody>
+			<tr>
+				<td class="head_td" colspan="3"><span id="place">未知區域</span>出發<span id="type">探險</span>中</td>
+			</tr>
+			<tr>
+				<td class="head_td" width="33%">體力狀態</td>
+				<td class="head_td" width="33%">精神狀態</td>
+				<td class="head_td" width="34%">預計回歸時間</td>
+			</tr>
+			<tr style="line-height: 2em">
+				<td><span id="stamina">體力滿點</span></td>
+				<td><span id="morale">精神抖擻</td>
+				<td><span id="return_timeline">未知</span></td>
+			</tr>
+			<tr>
+				<td class="head_td">歷程</td>
+				<td colspan="2" style="padding: 1em 0">
+					<ul id="log"><li>探險隊出發！</li></ul>
+				</td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<td colspan="3"><a class="uline back">【返回】</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div id="expedition_none">
+	<table class="wog-table1">
+		<tbody>
+			<tr>
+				<td>隊長尚未編制隊伍</td>
+			</tr>
+			<tr>
+				<td><a class="uline back">【返回】</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<!-- 派遣成功 -->
+<div id="expedition_start_success">
+	<table class="wog-table1">
+		<tr><td>探險隊出發了！請等待探險隊歸來。</td></tr>
+		<tr><td><a class="uline back">【返回】</a></td></tr>
+	</table>
+</div>
+
+<!-- 派遣成功但推遲出發時間 -->
+<div id="expedition_start_delay">
+	<table class="wog-table1">
+		<tr><td>探險隊準備完成！在推遲出發期間可以招募新隊員加入隊伍或募集探險基金。</td></tr>
+		<tr><td><a class="uline back">【返回】</a></td></tr>
+	</table>
+</div>
+
+<!-- 終止成功 -->
+<div id="expedition_pause_success">
+	<table class="wog-table1">
+		<tr><td>探險隊停止探險準備。</td></tr>
+		<tr><td><a class="uline back">【返回】</a></td></tr>
+	</table>
+</div>

@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<title>FFA線上網頁遊戲-Online FF Battle-WOG</title>
+<link type="text/css" rel="stylesheet" href="wog_faqStyle.css"/>
+<script type="text/javascript" src="wog_faqScript.js"></script>
+</head>
+<body bgcolor="#000000" text="#EFEFEF" link="#EFEFEF" vlink="#EFEFEF" alink="#EFEFEF" onload="init()">
+<table  border="1" cellspacing="0" cellpadding="2" align="center">
+<tr>
+	<td bgcolor="#003F7F" align="center">
+	<h1>問題FAQ for Online FF Battle - WOG4.5</h1>
+	</td>
+<tr>
+	<td class="textContainer" align="center">
+	<div class="containerLeft">
+	<div class="title">選單</div>
+	<!-- 可點選的選單，新增項目後請記得在下面新增相關的div內容 -->
+	<ul id="list">
+		<h2><li onclick="displayText('type')">屬性</li></h2>
+		<h2><li onclick="displayText('class')">職業</li></h2>
+		<h2><li onclick="displayText('shop')">購物</li></h2>
+		<h2><li onclick="displayText('bank')">銀行</li></h2>
+		<h2><li onclick="displayText('fight')">戰鬥</li></h2>
+		<h2><li onclick="displayText('pk')">玩家對決(PK)</li></h2>
+		<h2><li onclick="displayText('skill')">奧義</li></h2>
+		<h2><li onclick="displayText('message')">訊息中心</li></h2>
+		<h2><li onclick="displayText('auction')">拍賣</li></h2>
+		<h2><li onclick="displayText('group')">公會</li></h2>
+		<h2><li onclick="displayText('pet')">寵物牧場</li></h2>
+		<h2><li onclick="displayText('team')">組隊探險</li></h2>
+		<h2><li onclick="displayText('synthesis')">合成功能</li></h2>
+		<h2><li onclick="displayText('stone')">魔石</li></h2>
+		<h2><li onclick="displayText('exchange')">資源集中市場</li></h2>
+		<h2><li onclick="displayText('hotkey')">熱鍵</li></h2>
+		<h2><li onclick="displayText('others')">其他</li></h2>
+	</ul>
+	</div>
+	<div id="containerRight" class="containerRight">
+		歡迎使用WOG FAQ，請點選左方的選單開始閱讀相關項目的說明。<br/>
+		如果您認為這裡的說明文件無法充分地解決您的困惑，請到 <a href="http://www.et99.net" target="_blank">水色論壇</a> 詢問，謝謝。
+	</div>
+	</td>
+</tr>
+<tr>
+	<td class="copyright">
+	Online FF Battle - WOG 【Copyright (C) <a href="http://www.et99.net" target="_blank">ETERNAL</a>】
+	</td>
+</tr>
+</table>
+
+<div style="display:none">
+	<!-- 項目的相關說明，請將div的id設為上面的項目中所指定的id相同，讓<li>與這裡的<div>產生關聯 -->
+	<div id="type">
+		<ol>
+		<li>遊戲中有六種屬性，分別為<span class="earth">地</span>-<span class="water">水</span>-<span class="fire">火</span>-<span class="wood">木</span>-<span class="wind">風</span>-<span class="poision">毒</span></li>
+		<li><span class="earth">地</span> > <span class="water">水</span> > <span class="fire">火</span> > <span class="wood">木</span> > <span class="wind">風</span> > <span class="poision">毒</span> > <span class="earth">地</span></li>
+		<li><span class="earth">地</span>屬性攻擊<span class="water">水</span>,攻擊力增加0.2倍，以下類推 (<span class="poision">毒</span>屬性攻擊<span class="earth">地</span>,攻擊力增加0.2倍)</li>
+		<li>遇上對手克你的屬性時攻擊力減少0.2倍</li>
+		</ol>
+	</div>
+
+	<div id="class">
+		<ol>
+		<li>能選擇的職業是根據等級,能力等等狀態來決定，不同的職業其成長度也會有所不同</li>
+		<li>1-2 表示該能力每次升級會上升1點或2點,3-4 表示該能力每次升級會上3升點或4點</li>
+		<li>當裝備職業後每戰勝一場戰鬥，職業的熟練度會增加少許</li>
+		</ol>
+	</div>
+
+	<div id="shop">
+		<ol>
+		<li>購買裝備時請依據自己的能力來選購適合自己能力的物品</li>
+		<li>賣東西給商店一率為原價的5折</li>
+		<li>取得物品後可以將符合自己需求的裝備透過[裝備]指令來裝上</li>
+		</ol>
+	</div>
+
+	<div id="bank">
+		<ol>
+		<li>銀行最多可以只能存入4294967295元</li>
+		<li>身上現金最多可以只能放入4294967295元</li>
+		<li>銀行不提供利息</li>
+		</ol>
+	</div>
+
+	<div id="fight">
+		<ol>
+		<li>這是提升等級的唯一方法</li>
+		<li>每一場戰鬥須間隔2秒</li>
+		<li>戰鬥方法：點選[開始冒險]->選擇冒險場地->選擇戰鬥顯示模式->選擇攻擊模式並點選</li>
+		<li>戰鬥超過限定回合則算挑戰者輸,取得的經驗值會根據給予對手的傷害來計算</li>
+		<li>命中率根據對手跟自己的速度來計算,敏捷越高命中率越高,最低有50%的命中率</li>
+		<li>物攻的爆擊率及爆擊傷害根據敏捷差距而定</li>
+		<li>魔攻的爆擊率及爆擊傷害根據魅力差距而定</li>
+		<li>魔法攻擊時命中率為100%</li>
+		<li>戰鬥時會消耗行動力1點,若無行動力時戰鬥等待時間為12秒,經驗、金錢、打寶、熟練降低50%</li>
+		<li>行動力每三分鐘增加6點</li>
+		<li>自動使用恢復道具的條件為HP and SP</li>
+		<li>自動住宿的條件為HP and SP</li>
+		<li>在傭兵所可以雇用傭兵,每30秒自動戰鬥1次</li>
+		</ol>
+	</div>
+
+	<div id="pk">
+		<ol>
+		<li>欲跟對方舉行PK賽時請先從線上名單中選擇欲PK的對象</li>
+		<li>PK結束後有PK賞金，戰敗方必須支付PK賞金給戰勝方</li>
+		<li>Y表示開放PK , N表示不開放PK</li>
+		</ol>
+	</div>
+
+	<div id="skill">
+		<ol>
+		<li>到技能大師消耗技能熟練及金錢可以獲得技能 -><a href=http://www.et99.net/viewtopic.php?t=45173 target="_blank"><font color="#FF0000">技能說明</font></a></li>
+		<li>技能分為主動及被動</li>
+		<li>主動技能可以自由設定發動率</li>
+		<li>被動技能不能設定發動率,且有職業限制</li>
+		</ol>
+	</div>
+
+	<div id="message">
+		<ol>
+		<li>有人轉帳寫信給你、拍賣的商品賣出,可以在訊息中心裡得知</li>
+		</ol>
+	</div>
+
+	<div id="auction">
+		<ol>
+		<li>欲拍賣商品時必須設定拍賣時間</li>
+		<li>超過所設定的時間商品尚未賣出,商品會結束拍賣並回到裝備欄上,若裝備欄滿了可以在 【信箱】->【取物】裡面取回</li>
+		<li>假如裝備欄上已經超過10樣商品,拍賣的東西將會遺失,請注意</li>
+		<li>拍賣物品，系統會徵收手續費(賣價的1%) </li>
+		</ol>
+	</div>
+
+	<div id="group">
+		<ol>
+		<li>新公會保護期7天 </li>
+		<li>建立公會需要30000元 </li>
+		<li>公會被滅的保護期為24小時</li>
+		<li>生產兵力需要資源</li>
+		<li>中斷生產作業,資源不會補回</li>
+		<li>一位玩家最多只能執行三項生產作業</li>
+		<li>一位玩家最多只能執行一項軍備任務 </li>
+		<li>戰略指令只能從公會任務中獲得 </li>
+		</ol>
+	</div>
+
+	<div id="pet">
+		<ol>
+		<li>一個角色只能在牧場培養3隻寵物</li>
+		<li>戰鬥勝利時,身上有裝備捕捉器會有一定的機率抓到寵物,捕捉器也有一定的機率毀壞</li>
+		<li>AT:寵物物理攻擊力,MT:寵物魔力攻擊力,DEF:寵物防禦力,出擊值:影響寵物協助玩家機率</li>
+		<li>超過5天沒拍賣出去的寵物,會自動放生</li>
+		<li>當寵物超過5歲會自動綁定</li>
+		<li>寵物的屬性不能超越玩家</li>
+		<li>寵物的攻擊屬於無屬性</li>
+		<li>親密度,飢餓度,出擊值,玩家魅力 這四個能力值會影響寵物出現機率</li>
+		<li>DEF是寵物的防禦值,當怪打玩家時,寵物會隨機出現替玩家防禦,玩家受到的傷害為0,但是寵物的DEF為0時,寵物會戰敗該場戰鬥不會繼續出現協助玩家 </li>
+		<li>如果玩家在戰鬥中戰敗,寵物的親密度會減1-2不等</li>
+		<li>寵物的個性會影響寵物在戰鬥中的能力</li>
+		</ol>
+	</div>
+
+	<div id="team">
+		<ol>
+		<li>隊伍人數上限 5 人</li>
+		<li>同一區打怪才能支援隊友及平分經驗值</li>
+		<li>隊友有 15% 的機率出來幫忙打怪 (類似寵物幫打模式)</li>
+		<li>支援隊友 或 被支援 都必須3分鐘內有冒險，其中一方停頓超過3分鐘則支援功能會消失,經驗值也不會平分</li>
+		<li>隊伍創立超過三天會自動解散，屆時請重新組隊一次</li>
+		</ol>
+	</div>
+
+	<div id="synthesis">
+		<ol>
+		<li>"合成大師" 位於 商店街裡 ，點選您要合成的裝備看所需物品，備齊後即可合成</li>
+		</ol>
+	</div>
+
+	<div id="hotkey">
+		<ol>
+		<li>alt+x 快速冒險</li>
+		<li>alt+a 冒險開始</li>
+		<li>alt+s 角色狀態</li>
+		<li>alt+o 冠軍狀態</li>
+		<li>alt+c 商店街</li>
+		<li>alt+e 裝備欄</li>
+		<li>alt+h 住　宿</li>
+		<li>alt+v 偵查對手</li>
+		<li>alt+m 秘密傳訊</li>
+		<li>alt+p PK設定</li>
+		<li>alt+b 任務手冊</li>
+		<li>alt+q 情報中心</li>
+		<li>alt+r 公會中心</li>
+		<li>alt+t 團隊會所(組隊探險)</li>
+		</ol>
+	</div>
+
+	<div id="others">
+		<ol>
+		<li>挑戰冠軍需3000元費用,挑戰失敗,冠軍可拿70%</li>
+		<li>刪除角色、補發密碼請利用上方 帳號設定</li>
+		<li>帳號設定可以設定是否顯示友善消息</li>
+		<li>偵查對手需要10元</li>
+		<li>住宿會回復HP及SP</li>
+		<li>住宿會收取金錢，金錢不夠時會扣1/5 EXP</li>
+		<li>15級才能使用存款功能</li>
+		<li>100級開始扣住宿費</li>
+		<li>點擊物品時按住『Ctrl』可以張貼物品到聊天頻道</li>
+		</ol>
+	</div>
+
+	<div id="stone">
+		<ol>
+		<li>冒險時,有機率會從怪物身上取得魔石</li>
+		<li>在裝備欄上會顯示該裝備洞的數量,可把魔石鑲嵌在洞上提升能力</li>
+		<li>可在合成大師合成更高等級魔石</li>
+		</ol>
+	</div>
+
+	<div id="exchange">
+		<ol>
+		<li>在資源市場中可查看目前流通數量以及價格</li>
+		<li>可任意選擇欲購買的資源以及數量</li>
+		<li>玩家在冒險時會隨機性的影響資源上漲或下跌</li>
+		<li>遊戲內資源數量上限可貢獻給公會,提供公會成長</li>
+		</ol>
+	</div>
+
+</div>
+
+</body>
+</html>

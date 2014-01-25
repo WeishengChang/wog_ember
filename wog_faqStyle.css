@@ -1,0 +1,56 @@
+body,tr,td,th { font-family: 細明體,verdana; }
+/* container 設定 */
+.containerLeft{
+	float:left;
+	width:200px;
+	height:500px;
+	border:2px solid #999;
+	text-align:left;
+	padding:2px;
+	margin-right:2px;
+	overflow:auto;
+}
+.containerRight{
+	float:left;
+	width:600px;
+	height:500px;
+	border:2px solid #999;
+	text-align:left;
+	padding:2px;
+	overflow:auto;
+	line-height:6mm;
+}
+
+/* 選單設定 */
+ul#list li{
+	margin-bottom:1px;
+	cursor:pointer;
+	list-style-type:circle;
+}
+h2{
+	font-size : 18px;
+}
+/* 雜項設定 */
+.title{
+	border:2px inset #47689E;
+	background-color:#47689E;
+	text-align:center;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.copyright{
+	color:#EFEFEF;
+	font-weight:bold;
+	background-color:#2B4686;
+	text-align:center;
+	font-size : 18px;
+}
+
+/*人物屬性的顏色*/
+.earth{color:#F90}
+.water{color:#6666FF}
+.fire{color:#F00}
+.wood{color:#0F0}
+.wind{color:#0FF}
+.poision{color:#F0F}

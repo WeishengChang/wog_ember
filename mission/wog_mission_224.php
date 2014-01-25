@@ -1,0 +1,105 @@
+<?php
+function mission_start()
+{
+	return array(
+	array(
+		array(
+			'monster_id'=>'57',
+			'kill_num'=>'6'
+		),
+		array(
+			'monster_id'=>'59',
+			'kill_num'=>'6'
+		),
+		array(
+			'monster_id'=>'65',
+			'kill_num'=>'6'
+		),
+		array(
+			'monster_id'=>'67',
+			'kill_num'=>'6'
+		),
+		array(
+			'monster_id'=>'73',
+			'kill_num'=>'5'
+		),
+		array(
+			'monster_id'=>'77',
+			'kill_num'=>'5'
+		),
+		array(
+			'monster_id'=>'109',
+			'kill_num'=>'5'
+		),
+		array(
+			'monster_id'=>'44',
+			'kill_num'=>'5'
+		)
+	),
+	array(
+		array(
+		'a_id'=>array(),
+		'd_body_id'=>array(),
+		'd_foot_id'=>array(),
+		'd_hand_id'=>array(),
+		'd_head_id'=>array(),
+		'd_item_id'=>array('260*3'),
+		'd_stone_id'=>array(),
+		'd_honor_id'=>array('1304*2'),
+		'd_plus_id'=>array()
+		),
+		array(
+		'a_id'=>array(),
+		'd_body_id'=>array(),
+		'd_foot_id'=>array(),
+		'd_hand_id'=>array(),
+		'd_head_id'=>array(),
+		'd_item_id'=>array('260*3'),
+		'd_stone_id'=>array(),
+		'd_honor_id'=>array('1305*2'),
+		'd_plus_id'=>array()
+		),
+		array(
+		'a_id'=>array(),
+		'd_body_id'=>array(),
+		'd_foot_id'=>array(),
+		'd_hand_id'=>array(),
+		'd_head_id'=>array(),
+		'd_item_id'=>array('260*3'),
+		'd_stone_id'=>array(),
+		'd_honor_id'=>array('1306*2'),
+		'd_plus_id'=>array()
+		),
+		array(
+		'a_id'=>array(),
+		'd_body_id'=>array(),
+		'd_foot_id'=>array(),
+		'd_hand_id'=>array(),
+		'd_head_id'=>array(),
+		'd_item_id'=>array('260*3'),
+		'd_stone_id'=>array(),
+		'd_honor_id'=>array('2222*2'),
+		'd_plus_id'=>array()
+		),
+		array(
+		'a_id'=>array(),
+		'd_body_id'=>array(),
+		'd_foot_id'=>array(),
+		'd_hand_id'=>array(),
+		'd_head_id'=>array(),
+		'd_item_id'=>array('260*3'),
+		'd_stone_id'=>array(),
+		'd_honor_id'=>array('1307*2'),
+		'd_plus_id'=>array()
+		)
+	),
+	'mission_type'=>'1'
+	);
+}
+function mission_body($user_id,$m_id)
+{
+}
+function mission_end($user_id,$m_id)
+{
+}
+?>
